@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mera Pehla Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Service Portal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; }
+        .navbar { background: #1a73e8; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .navbar h1 { color: white; font-size: 22px; }
+        .navbar span { color: #cce0ff; font-size: 14px; }
+        .hero { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; padding: 50px 30px; text-align: center; }
+        .hero h2 { font-size: 32px; margin-bottom: 10px; }
+        .hero p { font-size: 16px; opacity: 0.85; }
+        .cards { display: flex; flex-wrap: wrap; gap: 20px; padding: 40px 30px; justify-content: center; }
+        .card { background: white; border-radius: 12px; padding: 25px; width: 220px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+        .card .icon { font-size: 40px; margin-bottom: 12px; }
+        .card h3 { font-size: 16px; color: #1a73e8; margin-bottom: 8px; }
+        .card p { font-size: 13px; color: #666; }
+        .stats { display: flex; gap: 20px; padding: 0 30px 40px; justify-content: center; flex-wrap: wrap; }
+        .stat { background: white; border-radius: 12px; padding: 20px 30px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); min-width: 150px; }
+        .stat h2 { font-size: 32px; color: #1a73e8; }
+        .stat p { font-size: 13px; color: #888; margin-top: 4px; }
+        .footer { background: #1a73e8; color: white; text-align: center; padding: 20px; font-size: 13px; opacity: 0.9; }
+        .badge { display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 11px; padding: 3px 10px; border-radius: 999px; margin-top: 8px; }
+    </style>
 </head>
 <body>
-    <h1>Hello! Yeh mera pehla HTML page hai!</h1>
-    <p>Jenkins ne deploy kiya hai yeh page!</p>
+
+<div class="navbar">
+    <h1>🖥️ IT Service Portal</h1>
+    <span>Welcome, Puneet Chauhan</span>
+</div>
+
+<div class="hero">
+    <h2>How can we help you today?</h2>
+    <p>Submit a request or browse our services below</p>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <div class="icon">🖨️</div>
+        <h3>Hardware Request</h3>
+        <p>Laptop, mouse, keyboard and more</p>
+        <span class="badge">Available</span>
+    </div>
+    <div class="card">
+        <div class="icon">🔐</div>
+        <h3>Access Request</h3>
+        <p>System, VPN or software access</p>
+        <span class="badge">Available</span>
+    </div>
+    <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Network Issue</h3>
+        <p>Internet, WiFi or connectivity</p>
+        <span class="badge">Available</span>
+    </div>
+    <div class="card">
+        <div class="icon">💻</div>
+        <h3>Software Install</h3>
+        <p>Request new software installation</p>
+        <span class="badge">Available</span>
+    </div>
+    <div class="card">
+        <div class="icon">📧</div>
+        <h3>Email Support</h3>
+        <p>Outlook, mailbox and email issues</p>
+        <span class="badge">Available</span>
+    </div>
+    <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>Security Issue</h3>
+        <p>Report a threat or security concern</p>
+        <span class="badge">Available</span>
+    </div>
+</div>
+
+<div class="stats">
+    <div class="stat">
+        <h2>24</h2>
+        <p>Open Tickets</p>
+    </div>
+    <div class="stat">
+        <h2>98%</h2>
+        <p>Uptime</p>
+    </div>
+    <div class="stat">
+        <h2>~2h</h2>
+        <p>Avg Response</p>
+    </div>
+    <div class="stat">
+        <h2>152</h2>
+        <p>Resolved Today</p>
+    </div>
+</div>
+
+<div class="footer">
+    Deployed by Jenkins Pipeline • IT Department © 2026
+</div>
+
 </body>
 </html>
