@@ -8,11 +8,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sshagent(['linux-server']) {
-                    sh '''
-                        scp -o StrictHostKeyChecking=no -P 3404 index.html root@172.25.10.50:/var/www/html/
-                    '''
-                }
+                bat '''
+                    scp -o StrictHostKeyChecking=no -P 3404 index.html root@172.25.10.50:/var/www/html/
+                '''
             }
         }
     }
